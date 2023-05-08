@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+    html tag --> defines root of an HTMl document
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Practice</title> title tag --> defines title of html document
+    
+    <style>
+        @media screen and (min-width:200px) {
+            header,footer,aside{
+                width: 100%;
+            }
+            
+        }
+        @media screen and (min-width:320px) {
+            aside{
+                background-color: green;
+            }
+        }
+        a:link{
+            color: rgb(242, 247, 242);
+            background-color: red;
+            text-decoration: none;
+            padding: 15px 25px;
+            text-align: center;
+            display: inline-block;
+        }
+        a:visited{
+            color: cyan;
+            background-color: transparent;
+            text-decoration: none;
+            padding: 15px 25px;
+            text-align: center;
+            display: inline-block;
+        }
+        a:hover{
+            background-color: transparent;
+        }
+        a:active{
+            background-color: transparent;
+        }
+        table,th,td{
+            border: 2px solid greenyellow;
+        }
+        tr:nth-child(even){
+            background-color: blueviolet;
+        }
+        tr:nth-child(odd){
+            background-color: cadetblue;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #d40b4b;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: whitesmoke;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    body tag --> defines the document's body
+    <h1>Om Namah Shivaya:</h1>
+    <h1>heading tag1--> font size is high in this tag</h1>
+    <h2>heading tag2</h2>
+    <h3>heading tag3</h3>
+    <h4>heading tag4</h4>
+    <h5>heading tag5</h5>
+    <h6>heading tag6</h6>
+    <hr>horizontal line
+    <p>paragraph tag</p>
+    <hr>
+    <a href="">anchor tag or link tag</a>in anchor tag or a tag href is an attribute of this anchor tag it gives link to the next page of html document.
+    <hr>
+    <br>break the line tag it means it gives space between lines
+    <hr>
+    <img src="https://images.pexels.com/photos/11035371/pexels-photo-11035371.jpeg?auto=compress&cs=tinysrgb&w=400" alt="it contains an image">-->It is an absolute URL image link which means that is hosted in another website.NOTE:- external image might be under copyright.if you do not get to useit, you may be in violation of copyright laws.in addition,you cannot control external images; it can suddenly be removed or changed.
+    <hr>
+    <img src="html5_logo.jpeg" alt="html logo inside the folder of this website">-->Links to an image that is hosted within the website. Here,the URl does not include the domain name.If the URl begins without a slash,it will be relative to the current page.
+    Example:-src="html5_logo".<br>
+    If the url begins with a slash ,it will be the relative to the domain.
+    Example:-src="/htm5/html5_logo".
+    <hr>
+    <p title="i am title attribute"> title</p>
+    <hr>
+    <b>i am a bold tag --> which means increase the font size</b>
+    <hr>
+    <i>i am a italic tag--> the shape of the font is italic</i>
+    <hr>
+    <pre id="poem" style="color:crimson;font-size:xx-large;font-style:italic;font-weight:bold" >
+        Johny! Johny! Yes pappa
+
+        Eating sugar! No pappa
+
+        Telling lies! No pappa
+
+        Open your mouth! Ha ha!
+    </pre>-->pre tag defines preformatted text.the text inside the pre element is displayed in a fixed width font(usually Courier),and it preservesboth spaces and line breaks.
+    <hr>
+    <strong>I am a strong tag</strong>-->it is a important text.which is nothing but an bold shape tag.
+    <hr>
+    <em>i am emphasized tag</em>-->it is a emphasized text.which is nothing but an italic shape tag.
+    <hr>
+    <mark>I am a mark tag</mark>--> this tag is useful to high light the text in the paragraph or text with yellow color.
+    <hr>
+    <small>i am a small tag</small>--> it is a small tag which is nothing but decrease the size of font and it is equals to h6 tag.
+    <hr>
+    <del>i am deleted tag</del>--> which gives a crossed line in a text in this tag.
+    <hr>
+    <ins>i am an inserted tag</ins>--> it gives a under line below of the text.
+    <hr>
+    <h1>H<sub>2</sub>O</h1>-->subscript tag is nothing but sub element of the text.
+    <hr>
+    <h1>(a+b)<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup>+2ab</h1>-->superscript tag is nothing but power element of the text.for example,2*2=4.
+    <hr>
+    <abbr title="Hyper Text Markup Language">HTML</abbr>--> this text is highlated with dots under line and when mouse over on it then title attribute willbe showned.
+    <hr>
+    <bdo dir="ltr">HTML</bdo>
+    <bdo dir="rtl">HTML</bdo>
+    <hr>
+    <q>I'm in Ghost mode.Better don't disturb me🤬</q>
+    <hr>
+    <a href="url">i am a link text</a>--> HTML links are hyper links.
+    you can click on a link and jump to another document.
+    when you mov the mouse over a link, the mouse arrow will turn into a little hand.
+    Note:A link does not have to be text.A link can be an image or any other HTML element.
+    The most important attribute of "a" element is href attribute,which indicates the link's destination.
+    the url text is the part that wiil be visible to the reader.
+    clicking on the text, eill send the reader to the specified URL address.<br>
+    <a href="https://www.amazon.com" target="_blank">Amazon</a>--> here target="_blank" is opens the document in a new window or tab.<br>
+    <a href="https://www.github.com" target="_self">GitHub</a>-->>here target="_self" is a Default.Opens the documentin the same window/tab as it was clicked. <br>
+    <a href="https://www.linkedin.com" target="_parent">Linkedin</a>-->.here target="_parent" Opens the document frame. <br>
+    <a href="https://www.freejobalert.com" target="_top">freejobalert</a>-->here target="_top" is Opens the document in the full body of the window.
+    <br>
+    <h3>absolute URLs</h3>
+    <p><a href="https://www.html.com">Html</a></p>
+    <br>
+    <h3>relative URLs</h3>
+    <a href="html_images.asp">HTML images</a>
+    <hr>
+    <img src="https://img.freepik.com/free-photo/back-view-man-bridge_23-2149605408.jp" alt="A boy watching the moon before standing on ocean" style="height: 200px;width: 200px;font-size:large;font-weight:bolder">--> here img tag have src attribute to give images absolute link or relative link and alt is nothing but alternative text when image is cann't display.
+    <hr>
+    <a href="mailto:lokeshpatnana2000@gmai.com">Send me mail</a>--> here use "mailto:" inside the href attribute to create a link that opens the user's email program(to let them send a new email).
+    <hr>
+    <button onclick="document.location='https:/www.google.com'">clickme</button>--> To use an HTMl button as a link, you have to add some javascript code
+-->javascript allows you to specify what happens at certain events,such as a click of a button.
+<hr>
+<a href="https://www.gmail.com" title="To go for mail">Gmail</a>
+<hr>
+<a href="#poem">Go to Bookmark</a>--> Bookmarks can be useful if a web page is very long.
+To create a Bookmark-first create Bookmark,then add a link to it.
+when the link is clicked,the page will scroll down or up to the location with the bookmark.
+<hr>
+<img src="https://www.w3schools.com/html/programming.gif" alt="programmer man" style="height: 300px;width:250px;float:right">
+<hr>
+<h1>Table</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Phone No</th>
+        <th>country</th>
+    </tr>
+    <tr>
+        <td>Lokesh</td>
+        <td>7396687740</td>
+        <td>India</td>
+    </tr>
+    <tr>
+        <td>Sai Kishore</td>
+        <td>9640794001</td>
+        <td>India</td>
+    </tr>
+</table>
+<hr>
+<table style="border-radius: 10px;">
+    <thead style="background-color: coral;">
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody style="background-color: coral;">
+        <tr>
+            <td>1.</td>
+            <td>Lokesh</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Sai Kishore</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td style="color:rgb(17, 191, 239)">Lalith</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<h3>Unordered HTML lists:</h3>-->An Unordered list starts with the "ul" tag.Each list item starts with the li tag.
+    The list items will be marked with bullets(small balck circles) by default.
+    <ul style="list-style-type: circle;">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <ul style="list-style-type: square;">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <ul style="list-style-type: none;">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <ul style="list-style-type:armenian;">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <ul style="list-style-type:disc;">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <h4>Nested HTML Unordered Lists:</h4>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Green Tea</li>
+                <li>Lemon Tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+    <h2>Let's create a navigation menu using Unordered lists:</h2>
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+</ul>
+    <h3>Ordered HTML lists:</h3>--> An Ordered list starts with the "ol" tag.Each list item starts with the li tag.
+    The list items will be marked with the numbers by default.
+<ol>
+    <li>First Item</li><br>
+    <li>Second Item</li><br>
+    <li>Third Item</li><br>
+    <li>Fourth Item</li>
+</ol>
+<br>
+<ol type="1">
+    <li>First Item</li><br>
+    <li>Second Item</li><br>
+    <li>Third Item</li><br>
+    <li>Fourth Item</li>
+</ol>
+<br>
+<ol type="A">
+    <li>First Item</li><br>
+    <li>Second Item</li><br>
+    <li>Third Item</li><br>
+    <li>Fourth Item</li>
+</ol>
+<br>
+<ol type="a">
+    <li>First Item</li><br>
+    <li>Second Item</li><br>
+    <li>Third Item</li><br>
+    <li>Fourth Item</li>
+</ol>
+<br>
+<ol type="I">
+    <li>First Item</li><br>
+    <li>Second Item</li><br>
+    <li>Third Item</li><br>
+    <li>Fourth Item</li>
+</ol>
+<br>
+<ol type="i">
+    <li>First Item</li><br>
+    <li>Second Item</li><br>
+    <li>Third Item</li><br>
+    <li>Fourth Item</li>
+</ol>
+<br>
+<h3>Control List Counting:</h3>
+<ol start="21">
+    <li>First Item</li><br>
+    <li>Second Item</li><br>
+    <li>Third Item</li><br>
+    <li>Fourth Item</li>
+</ol>
+<br>
+<h3>Nested Ordered lists:</h3>
+<ol>
+    <li>Man</li><br>
+    <li>Woman
+        <ol>
+            <li>Lady</li><br>
+            <li>Girl</li><br>
+            <li>Women</li>
+        </ol>
+    </li><br><br><br><br>
+    <li>Human Beings</li>
+</ol>
+<br>
+<h3>Description Lists:</h3>-->Html also supports description lists.A description list is a list of terms, with a description of each term.
+The "dl" tag defines the description list,the "dt" tag defines the term(name),and the "dd" tag describes each term.
+<dl>
+    <dt>Coffee</dt>
+    <dd>- Black Hot Drink</dd>
+    <dt>Milk</dt>
+    <dd>- white Cold Drink</dd>
+</dl>
+<hr>
+<h1>HTML Block and Inline Elements:</h1>
+-->Evary HTML elements has a default display value,depending on what type of element it is.<br>
+-->There are two display values:block and inline.<br>
+<h2>Block-Level Elements:</h2>
+--> A block-level element always starts on a new line ,and the browsers automatically add some space (a margin) before and after the element.<br>
+-->A block-level element always takes up the full width available (streches out to the left and right as far as it can). <br>
+--> Two commonly used block elements are:"p" and "div". <br>
+-->The "p" element defines a paragraph in an HTML document. <br>
+-->The "div" element defines a division or a section in an HTML document.
+<br>
+<p style="border: 2px solid rgb(240, 9, 98)">I am paragraph with consists of an block-level element</p>
+<div style="border: 2px solid rgb(255, 0, 119)">I am <span style="border: 3px solid green;">division or a section</span> with consists of an block -level element</div>
+--> the "span" tag is an inline or section in an HTMl document.
+<hr>
+<iframe src="https://www.github.com" title="ifame example"></iframe>
+<hr>
+<h3 id="demo">HTML javascript</h3>-->The HTML "script" tag is used to define a client-side script(JavaScript). <br>
+-->The "script" element either contains script statements or it points to an external script file through src attribute. <br>
+-->Common uses for javascriptare image manipulation,form validation and dynamic changes of content. <br>
+--> To select an HTML element,javascript most often uses the document.getElementById() method.<br>
+<button style="padding:16px;color:whitesmoke;background-color:#396ad4;border-radius: 16px;border:1px solid white" type="button" onclick="myfun()">click here</button>
+<script>
+function myfun(){
+    document.getElementById("demo").innerHTML = prompt("Please enter your text here...!");
+}
+</script>
+<hr>
+<header style="background-color: cyan;padding:30px;text-align:center;font: size 35px;border:3px solid white">
+    <h2>Header</h2>
+</header>
+<nav style="background-color: crimson;padding:25px;text-align:center;font: size 30px;color:whitesmoke;border:3px solid white">
+    <h2>Navbar</h2>
+</nav>
+<section style="background-color:goldenrod;padding:10px;text-align:center;width:50%;border:3px solid white">
+    <h2>Section</h2>
+</section>
+<article style="background-color: greenyellow;padding:10px;text-align:center;width:50%;border:3px solid white">
+    <h2>article</h2>
+</article>
+<aside style="background-color: blue;color:whitesmoke;padding: 10px;;text-align:center;border:3px solid white;">
+    <h2>aside</h2>
+</aside>
+<footer style="background-color: rgb(78, 234, 5);padding:25px;text-align:center;font: size 30px;color:rgb(18, 16, 16);border:3px solid white">
+    <h2>footer</h2>
+</footer >
+<hr>
+<code>
+    x = 100;
+    y = 200;
+    z = 3000;
+    n = x+y+z;
+</code>
+<kbd>
+    Ctrl+P
+</kbd>
+<hr>
+<nav>
+    <a href="#demo">HTMl</a>
+    <a href="#demo">CSS</a>
+    <a href="#demo">JavaScript</a>
+</nav>
+<aside>
+    <h3>Lorem topic</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit impedit quas rerum aut. Magni ratione, nisi dolorum temporibus sunt a eum sint quae, adipisci aliquam deserunt accusantium illo ab exercitationem!</p>
+</aside>
+<figure>
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="">
+    <figcaption>Beautiful😘</figcaption>
+</figure>
+<hr>
+<form action="">
+    <label for="fname">First Name:</label><br>
+    <input type="text"><br>
+    <label for="check">check it</label>
+    <input type="checkbox" name="" id=""><br>
+    <input type="radio" name="" id=""><br>
+    <input type="submit" value="Submit"><br>
+    <input type="button" value="button">
+</form>
+<br>
+<form>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+    </form>
+<br>
+<<form action="#demo">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <form action="#">
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="rr">Rolls Royce</option>
+        <option value="benz">Mercedes Benz</option>
+        <option value="ferari">Ferari</option>
+        <option value="bmw">BMW</option>
+    </select>
+    <input type="submit" value="submit">
+  </form>
+  <button type="button" onclick="alert('Oh no! you clicked me 😉')">clickme</button>
+  <form action="">
+    <input list="browsers" name="browsers">
+    <datalist id="browsers">
+        <option value="IE">Internet Exlorer</option>
+        <option value="ff">FireFox</option>
+        <option value="crme">chrome</option>
+        <option value="opra">opera</option>
+        <option value="safari">safari</option>
+    </datalist>
+    <input type="submit" value="submit">
+  </form>
+  <input type="range" name="range" id="range" style="background-color:crimson">
+  <input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+<hr>
+<audio src="/[iSongs.info] 02 - Mawa Bro.mp3" controls></audio>
+<video src="https://youtu.be/gH_RYRwVrVM" controls></video>
+</body>
+</html>
